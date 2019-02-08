@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]>    <html class="ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta name="keywords" content="design strategy, interaction design, design thinking, zurb, design" />
+<meta name="description" content="Creative Experiments from ZURB. Welcome to the ZURBplayground where we share creative interaction design tools and experiments from the design and engineering teams here at ZURB. We create tools, implementation examples, and other interesting projects that help people design for people." />
+<meta name="verify-v1" content="FIGJ61mNGm8gsksgklVzG71j7+Q0u6zTDF+VE9vA/8k=" />
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/playground/assets/apple-icons/touch-icon-iphone-62abe0cdf7cdb268f32461f9e48a23c4.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/playground/assets/apple-icons/touch-icon-ipad-7b1c7683ce9b947aef5438684d8866fd.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/playground/assets/apple-icons/touch-icon-iphone-retina-82c632d82262f8d8a739f24a7c26da07.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/playground/assets/apple-icons/touch-icon-ipad-retina-7482693019c5e4d3e8d1feffe719e6c7.png" />
+<link rel="shortcut icon" href="/playground/assets/icons/favicon-19fc393db3d5b6bb59dcd3d449ff7d5e.ico">
+<title>Playground from ZURB | Design tools and creative experiments</title>
+<script>
+      var categoryId = null;
+    </script>
+<link href="/playground/assets/application-9ec460aae48a6bed0de872f2ed0bcce3.css" media="screen" rel="stylesheet" />
+<link href="/playground/assets/foundicons-06a2aad07c2e05db7e3b1c88a0cc0b2a.css" media="screen" rel="stylesheet" />
+<script src="/playground/assets/vendor/custom.modernizr-fce4dc4d109f12709c12011404f30b78.js"></script>
+<script type="text/javascript">
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2195009-29', 'auto'); // Playground
+  ga('create', 'UA-2195009-43', 'auto', {'name': 'studiosLevel'}); // Studios
+  ga('create', 'UA-2195009-33', 'auto', {'name': 'universityLevel'}); // University
+  ga('create', 'UA-2195009-2', 'auto', {'name': 'zurbLevel'}); // ZURB
+  
+  ga('send', 'pageview'); // Playground
+  ga('studiosLevel.send', 'pageview'); // Studios
+  ga('universityLevel.send', 'pageview'); // University
+  ga('zurbLevel.send', 'pageview'); // ZURB
+
+</script>
+<meta content="authenticity_token" name="csrf-param" />
+<meta content="hIHpiAcsIjKoar5/G1ERYOpVKnTxgEtYa4RDMRQMGGM=" name="csrf-token" />
+</head>
+<body class="off-canvas hide-extras antialiased">
+
+<section role="main" class="body">
+
+<nav class="global-nav show-for-small">
+<ul class="title-area">
+<li class="name">
+<h1><a class="sidebar-button show-for-small services" id="sidebarButton" href="#sidebar"><img alt="Menu icon" src="/playground/assets/icons/menu-icon-05ed101790615db3eeadb7a569cb56d0.png" />ZURB</a></h1>
+</li>
+</ul>
+</nav>
+
+<nav class="global-nav top-bar hide-for-small">
+<ul class="title-area">
+<li class="name">
+<h1><a href="https://zurb.com">ZURB</a></h1>
+</li>
+<li class="toggle-topbar"><a href="#"></a></li>
+</ul>
+<section class="top-bar-section">
+<ul class="right">
+<li><a href="https://zurb.com/about">About</a></li>
+<li><a href="https://zurb.com/services">Services</a></li>
+<li><a href="https://zurb.com/blog">Blog</a></li>
+<li><a class="current" href="https://zurb.com/playground">Sparks</a></li>
+<li><a href="https://zurb.com/soapbox">News &amp; Events</a></li>
+</ul>
+</section>
+</nav>
+
+
+
+<div class="interior-header bg-dgreen">
+<div class="row" style="overflow: visible">
+<div class="large-12 columns large-centered">
+<h1 class="title text-center">ZURB Playground</h1>
+<ul class="marketing-subnav">
+<li><a href="/" class="is-active">Playground</a></li>
+<li><a href="https://zurb.com/word">Word</a></li>
+<li><a href="https://zurb.com/friday15">Friday15</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="medium-10 large-9 columns large-centered">
+<p class="top-lead"><strong>The Playground is ZURB’s repository for technical experiments.</strong> When it comes to web technologies, anything goes on the Playground, whether it’s playing with JavaScript or crafting a love potion in CSS. You'll find everything from plugins to code snippets to downloadable tools to help you design better.</p>
+<p class="top-lead"><a href="/playground/graduates"> See playground graduates &rarr; </a></p>
+</div>
+</div>
+<div class="row">
+<div class="medium-12 large-12 columns">
+<hr class="dotted">
+</div>
+</div>
+
+<div class="row">
+<div class="large-12 columns">
+<div class="homepage-hero">
+<h2><a href="/playground/css-grid-examples">Foundation CSS Grid Examples</a></h2>
+<p>CSS Grid enables some radical improvements in web development. In this playground piece we explore some of the possibilities. <a href="/playground/css-grid-examples">Learn more</a></p>
+<a href="/playground/css-grid-examples"><img alt="Grid example hero" src="/playground/uploads/project/hero/108/grid-example-hero.png" /></a>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="large-12 columns">
+<hr class="dotted">
+
+<ul class="project-grid">
+<li class="thumb-block">
+<a class="thumb" href="/playground/css-grid-and-container-queries">
+<img alt="Rocket thumb" src="/playground/uploads/project/thumb/109/rocket-thumb.png" />
+</a> <div class="info">
+<h2><a href="/playground/css-grid-and-container-queries">Foundation CSS Grid + Container Queries</a></h2>
+<p>The web is evolving super quickly, and with the rise of tools like CSS-Grid and Container Queries we can start thinking beyond the page when it comes to layout.</p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/grids-within-grids">
+<img alt="Grids thumb" src="/playground/uploads/project/thumb/110/grids-thumb.png" />
+</a> <div class="info">
+<h2><a href="/playground/grids-within-grids">Foundation Grids within Grids</a></h2>
+<p>Starting from a concept that CSS-grid enables incredible new possibilities for web components, and adding on the concept of container queries to allow us to think about components individually relative to the space they have available to them, rather than only at a page-level, in this piece we explore what happens when multiple grid-based components interact.</p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/reactive-animation-listener">
+<img alt="Bg tile reactive" src="/playground/uploads/project/thumb/107/bg-tile-reactive.png" />
+</a> <div class="info">
+<h2><a href="/playground/reactive-animation-listener">Reactive Animation Listener</a></h2>
+<p>Advanced Microinteractions Using Animations That React To Your Movements</p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/foundation-for-apps">
+<img alt="Screen shot 2016 10 31 at 1.28.01 pm" src="/playground/uploads/project/thumb/97/Screen_Shot_2016-10-31_at_1.28.01_PM.png" />
+</a> <div class="info">
+<h2><a href="/playground/foundation-for-apps">Foundation for Apps</a></h2>
+<p>Foundation for Apps: build better, more polished single-page web applications that work across many devices.</p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/slinky">
+<img alt="Thumb" src="/playground/uploads/project/thumb/96/thumb.png" />
+</a> <div class="info">
+<h2><a href="/playground/slinky">Slinky</a></h2>
+<p>Code an entire Foundation for Emails email, ready to send, all within a CodePen</p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/tribute">
+<img alt="Screen shot 2016 05 03 at 2.05.23 pm" src="/playground/uploads/project/thumb/95/Screen_Shot_2016-05-03_at_2.05.23_PM.png" />
+</a> <div class="info">
+<h2><a href="/playground/tribute">Tribute.js</a></h2>
+<p>Lightweight Native ES6 JavaScript @mention Plugin (No jQuery Dependency) </p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/testsubject">
+<img alt="Thumb" src="/playground/uploads/project/thumb/94/thumb.jpg" />
+</a> <div class="info">
+<h2><a href="/playground/testsubject">TestSubject</a></h2>
+<p>Test How Your Email Subject Lines Appear On The Most Popular Mobile Devices</p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/motion-ui">
+<img alt="Grid" src="/playground/uploads/project/thumb/82/grid.jpg" />
+</a> <div class="info">
+<h2><a href="/playground/motion-ui">Motion UI</a></h2>
+<p>A Sass library for creating custom CSS transitions and animations.</p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/css-flip-book">
+<img alt="Css flip book thumb" src="/playground/uploads/project/thumb/69/css-flip-book-thumb.png" />
+</a> <div class="info">
+<h2><a href="/playground/css-flip-book">CSS Flip Book</a></h2>
+<p>Add a virtual flip book to any webpage... without javascript!</p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/foundation-morse-code">
+ <img alt="Morse thumbnail" src="/playground/uploads/project/thumb/68/morse-thumbnail.jpg" />
+</a> <div class="info">
+<h2><a href="/playground/foundation-morse-code">Morse Code for Foundation</a></h2>
+<p>Use our grid shortcuts for Coda and Sublime Text to help you code faster.</p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/responsive-ads">
+<img alt="Thumbnail" src="/playground/uploads/project/thumb/67/thumbnail.jpg" />
+</a> <div class="info">
+<h2><a href="/playground/responsive-ads">Responsive Ads</a></h2>
+<p>Our prototype responsive ads allow you to design one ad for every screen.</p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/image-blur-texture">
+<img alt="Thumbnail" src="/playground/uploads/project/thumb/66/thumbnail.jpg" />
+</a> <div class="info">
+<h2><a href="/playground/image-blur-texture">Image Blur Texture</a></h2>
+<p>Create a slick blurred texture using CSS transforms or HTML5 Canvas.</p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/pizza-amore-charts-and-graphs">
+<img alt="Thumbnail" src="/playground/uploads/project/thumb/65/thumbnail.jpg" />
+</a> <div class="info">
+<h2><a href="/playground/pizza-amore-charts-and-graphs">Pizza Amore!</a></h2>
+<p>Deliver up pie charts, bar charts and line graphs for your responsive site. </p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/pizza-pie-charts">
+<img alt="Thumb" src="/playground/uploads/project/thumb/60/thumb.jpg" />
+</a> <div class="info">
+<h2><a href="/playground/pizza-pie-charts">Pizza Pie Charts</a></h2>
+<p>Creating responsive pie charts for any device is a piece of pie.</p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/prototyping-mobile-first">
+<img alt="Thumbnail" src="/playground/uploads/project/thumb/59/thumbnail.jpg" />
+</a> <div class="info">
+<h2><a href="/playground/prototyping-mobile-first">Prototyping Mobile First</a></h2>
+<p>Use our iOS 7, Android Jelly Bean and Windows 8 stencils and sketchsheets to prototype faster.</p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/foundation-icon-fonts-3">
+<img alt="Thumbnail" src="/playground/uploads/project/thumb/58/thumbnail.jpg" />
+</a> <div class="info">
+<h2><a href="/playground/foundation-icon-fonts-3">Foundation Icon Fonts 3</a></h2>
+<p>Customize your icons to be any size, color, style in CSS</p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/wrangle-jquery-plugin">
+<img alt="Thumb" src="/playground/uploads/project/thumb/41/thumb.jpg" />
+</a> <div class="info">
+<h2><a href="/playground/wrangle-jquery-plugin">Wrangle jQuery Plugin</a></h2>
+<p>This responsive JavaScript plugin allows you to quickly multi-select with the drag of a mouse—or finger.</p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/twentytwenty">
+<img alt="Twentytwenty" src="/playground/uploads/project/thumb/12/twentytwenty.jpg" />
+</a> <div class="info">
+<h2><a href="/playground/twentytwenty">jQuery TwentyTwenty Plugin</a></h2>
+<p>Need an easy way to compare two images, photographs, or designs? Our visual diff tool brings changes into focus.</p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/foundation-interchange">
+<img alt="Interchange" src="/playground/uploads/project/thumb/17/interchange.jpg" />
+</a> <div class="info">
+<h2><a href="/playground/foundation-interchange">Interchange for Foundation 4</a></h2>
+<p>Use media queries and Interchange to deliver the right images to your users.</p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/foundation4-stencil-sets">
+<img alt="F4 stencils" src="/playground/uploads/project/thumb/33/f4-stencils.jpg" />
+</a> <div class="info">
+<h2><a href="/playground/foundation4-stencil-sets">Foundation 4 Stencil Sets</a></h2>
+<p>All the goodies you need to create awesome wireframes in OmniGraffle or extensive set of vectors you can use for about anything.</p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/foundation-rtl">
+<img alt="Foundaion rtl" src="/playground/uploads/project/thumb/9/foundaion-rtl.png" />
+</a> <div class="info">
+<h2><a href="/playground/foundation-rtl">Right-to-Left for Foundation 4</a></h2>
+<p>Super easy right-to-left layouts in Foundation 4.</p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/clambake">
+<img alt="Clambake" src="/playground/uploads/project/thumb/11/clambake.jpg" />
+</a> <div class="info">
+<h2><a href="/playground/clambake">The Clambake</a></h2>
+<p>Add retina-ready logos and other graphics to your emails. Use it with our responsive email templates.</p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/responsive-email-templates">
+<img alt="Resp email templates" src="/playground/uploads/project/thumb/8/resp-email-templates.jpg" />
+</a> <div class="info">
+<h2><a href="/playground/responsive-email-templates">Responsive Email Templates</a></h2>
+<p>Ensure your email campaigns look good on any device with our responsive email templates.</p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/social-webicons">
+<img alt="Social icons" src="/playground/uploads/project/thumb/40/social-icons.jpg" />
+</a> <div class="info">
+<h2><a href="/playground/social-webicons">Social Web Icons</a></h2>
+<p>Resolution-independent SVG icons for all your social networking needs.</p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/responsive-sketchsheets">
+<img alt="Resp sketchsheets" src="/playground/uploads/project/thumb/32/resp-sketchsheets.jpg" />
+</a> <div class="info">
+<h2><a href="/playground/responsive-sketchsheets">Responsive Sketchsheets</a></h2>
+<p>We&#39;ve developed a set of Responsive sketchsheets we print out to improve our presentation of rough ideas to clients.</p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/responsive-tables">
+<img alt="Responsive tables" src="/playground/uploads/project/thumb/23/responsive-tables.jpg" />
+</a> <div class="info">
+<h2><a href="/playground/responsive-tables">Crafty Responsive Tables</a></h2>
+<p>You know how tables mess up responsive layouts? Not any more.</p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/foundation-stencil-sets">
+<img alt="F stencils" src="/playground/uploads/project/thumb/34/f-stencils.jpg" />
+</a> <div class="info">
+<h2><a href="/playground/foundation-stencil-sets">Foundation 3 Stencil Sets</a></h2>
+<p>An extensive set of wireframing icons made for Omnigraffle or anything that can edit vector PDFs.</p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/foundation-icons">
+<img alt="Foundation icons" src="/playground/uploads/project/thumb/5/foundation-icons.jpg" />
+</a> <div class="info">
+<h2><a href="/playground/foundation-icons">Foundation Icon Fonts</a></h2>
+<p>Fresh icon font sets that you can use on your next project!</p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/jquery-joyride-feature-tour-plugin">
+<img alt="Joyride" src="/playground/uploads/project/thumb/6/joyride.jpg" />
+</a> <div class="info">
+<h2><a href="/playground/jquery-joyride-feature-tour-plugin">jQuery Joyride Plugin</a></h2>
+<p>Want to take users through a tour of your app? We&#39;ve got the right tool.</p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/off-canvas-layouts">
+<img alt="Off canvas layouts" src="/playground/uploads/project/thumb/20/off-canvas-layouts.jpg" />
+</a> <div class="info">
+<h2><a href="/playground/off-canvas-layouts">Off-Canvas Layouts</a></h2>
+<p>Sweet layout patterns to use, built with and for Foundation 3.</p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/rapid-prototyping-with-flickrbomb">
+<img alt="Flickrbomb" src="/playground/uploads/project/thumb/19/flickrbomb.jpg" />
+</a> <div class="info">
+<h2><a href="/playground/rapid-prototyping-with-flickrbomb">flickrBomb: Rapid Prototyping</a></h2>
+<p>Use flickrBomb to quickly fill your pages with relevant images from Flickr.</p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/html5-video-voting">
+<img alt="Video voting" src="/playground/uploads/project/thumb/18/video-voting.jpg" />
+</a> <div class="info">
+<h2><a href="/playground/html5-video-voting">HTML5 Video Voting</a></h2>
+<p>Vote on your favorite parts of the video and jump to popular segments.</p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/orbit-jquery-image-slider">
+<img alt="Orbit" src="/playground/uploads/project/thumb/7/orbit.jpg" />
+</a> <div class="info">
+<h2><a href="/playground/orbit-jquery-image-slider">Orbit: jQuery Slider Plugin</a></h2>
+<p>Sick of confusing and bloated image sliders that never work? Rock ZURB&#39;s Orbit for a mere 4KB.</p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/reveal-modal-plugin">
+<img alt="Reveal" src="/playground/uploads/project/thumb/3/reveal.jpg" />
+</a> <div class="info">
+<h2><a href="/playground/reveal-modal-plugin">Reveal: jQuery Modal Plugin</a></h2>
+<p>We&#39;ve made the sexiest, most lightweight jQuery modal plugin this side of ever.</p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/jquery-raptorize">
+<img alt="Raptorize" src="/playground/uploads/project/thumb/22/raptorize.jpg" />
+</a> <div class="info">
+<h2><a href="/playground/jquery-raptorize">jQuery Raptorize Plugin</a></h2>
+<p>Want to put an animated prehistoric easter egg on your site? We&#39;ve got what you need.</p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/javascript-annotation-plugin">
+<img alt="Annotation" src="/playground/uploads/project/thumb/21/annotation.jpg" />
+</a> <div class="info">
+<h2><a href="/playground/javascript-annotation-plugin">ZURB JavaScript Annotation Plugin</a></h2>
+<p>Our jQuery plugin makes it dead simple to add and save annotations on images.</p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/ajax-upload">
+<img alt="Ajax upload" src="/playground/uploads/project/thumb/4/ajax-upload.jpg" />
+</a> <div class="info">
+<h2><a href="/playground/ajax-upload">AJAX Image Upload</a></h2>
+<p>We&#39;ve got a sweet solution that uploads an image with AJAX and then immediately displays a thumbnail.</p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/jquery-text-change-custom-event">
+<img alt="Text change" src="/playground/uploads/project/thumb/13/text-change.jpg" />
+</a> <div class="info">
+<h2><a href="/playground/jquery-text-change-custom-event">jQuery Text Events</a></h2>
+<p>Need some hot new events to watch for on text inputs? We&#39;ve got you covered with an easy to use new set of text change events for jQuery.</p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/drop-in-modals">
+<img alt="Modals" src="/playground/uploads/project/thumb/26/modals.jpg" />
+</a> <div class="info">
+<h2><a href="/playground/drop-in-modals">Simple Drop-In Modals</a></h2>
+<p>How to create a very simple modal element using CSS3 and a single line of javascript.</p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/inline-form-labels">
+<img alt="Inline form labels" src="/playground/uploads/project/thumb/24/inline-form-labels.jpg" />
+</a> <div class="info">
+<h2><a href="/playground/inline-form-labels">Inline Form Labels</a></h2>
+<p>With some CSS tricks and a few lines of JavaScript we can create inline labels that don&#39;t suck.</p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/google-buttons">
+<img alt="Google buttons" src="/playground/uploads/project/thumb/14/google-buttons.jpg" />
+</a> <div class="info">
+<h2><a href="/playground/google-buttons">Make Your Own Google Buttons</a></h2>
+<p>Creating compelling buttons with nothing but CSS3.</p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/radioactive-buttons">
+<img alt="Radioactive buttons" src="/playground/uploads/project/thumb/15/radioactive-buttons.jpg" />
+</a> <div class="info">
+<h2><a href="/playground/radioactive-buttons">Radioactive Buttons with RGBa and Animations</a></h2>
+<p>Create killer button focus effects using some very simple RGBa colors and -webkit-animations.</p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/super-awesome-buttons">
+<img alt="Awesome buttons" src="/playground/uploads/project/thumb/16/awesome-buttons.jpg" />
+</a> <div class="info">
+<h2><a href="/playground/super-awesome-buttons">Super Awesome Buttons with CSS3 and RGBa</a></h2>
+<p>Using a combination of CSS3 and new RGBa color values, we can create an easily scalable suite of awesome buttons, complete with gradient, drop shadow, and more.</p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/newspaper-layout">
+<img alt="Newspaper layouts" src="/playground/uploads/project/thumb/25/newspaper-layouts.jpg" />
+</a> <div class="info">
+<h2><a href="/playground/newspaper-layout">Newspaper Layouts with CSS Columns</a></h2>
+<p>Creating a newspaper-like layout is easy using the new CSS column elements.</p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/awesome-overlays">
+<img alt="Overlays" src="/playground/uploads/project/thumb/27/overlays.jpg" />
+</a> <div class="info">
+<h2><a href="/playground/awesome-overlays">Awesome Overlays with CSS3</a></h2>
+<p>An example of using border-image and other new properties to make killer image overlays in Notable.</p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/css-boxshadow-experiments">
+<img alt="Css3 shadows" src="/playground/uploads/project/thumb/39/css3-shadows.jpg" />
+</a> <div class="info">
+<h2><a href="/playground/css-boxshadow-experiments">CSS Shadow Experiments</a></h2>
+<p>We use CSS box shadows to take a trip to the dark side of the moon, create a periodical table and make a radioactive love concoction. We even throw some CSS animations in there to add to the party.</p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/osx-dock">
+<img alt="Osx dock" src="/playground/uploads/project/thumb/28/osx-dock.jpg" />
+</a> <div class="info">
+<h2><a href="/playground/osx-dock">Recreating the OS X Dock</a></h2>
+<p>We experiment with what you can do using CSS3 and a tiny bit of javascript.</p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/css3-polaroids">
+<img alt="Polaroid" src="/playground/uploads/project/thumb/29/polaroid.jpg" />
+</a> <div class="info">
+<h2><a href="/playground/css3-polaroids">Polaroid Images with Only CSS3</a></h2>
+<p>Using nothing more than a grid of linked images and CSS3, we echo the title text of our links and use CSS3 to create &quot;randomly&quot; tilted polaroid-style images.</p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/sliding-vinyl">
+<img alt="Vinyl" src="/playground/uploads/project/thumb/30/vinyl.jpg" />
+</a> <div class="info">
+<h2><a href="/playground/sliding-vinyl">Sliding Vinyl with CSS3</a></h2>
+<p>We take an image of an album cover, some basic HTML, and a little fancy CSS3 that, on hover, slides out the pure-CSS vinyl record behind it.</p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/css-grid-builder">
+<img alt="Grid builder" src="/playground/uploads/project/thumb/35/grid-builder.jpg" />
+</a> <div class="info">
+<h2><a href="/playground/css-grid-builder">ZURB CSS Grid Builder</a></h2>
+<p>Plug in number of columns, width and gutter size to generate robust, flexible, QA&#39;d grids for your projects.</p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/iphone-stencils">
+<img alt="Iphone sketchsheets" src="/playground/uploads/project/thumb/37/iphone-sketchsheets.jpg" />
+</a> <div class="info">
+<h2><a href="/playground/iphone-stencils">ZURB iPhone Omnigraffle Stencils &amp; Sketchsheets</a></h2>
+<p>Use our iPhone stencils and sketchsheets to prototype faster.</p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/ipad-stencils">
+<img alt="Ipad sketchsheets" src="/playground/uploads/project/thumb/38/ipad-sketchsheets.jpg" />
+</a> <div class="info">
+<h2><a href="/playground/ipad-stencils">ZURB iPad Omnigraffle Stencils &amp; Sketchsheets</a></h2>
+<p>Use our iPad stencils and sketchsheets to make your work process a lot more efficient.</p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/gingerbread-stencils">
+<img alt="Gingerbread sketchsheets" src="/playground/uploads/project/thumb/2/gingerbread-sketchsheets.jpg" />
+</a> <div class="info">
+<h2><a href="/playground/gingerbread-stencils">ZURB Android Gingerbread Omnigraffle Stencils &amp; Sketchsheet</a></h2>
+<p>Use our Android Gingerbread stencils and sketchsheets to create mockups faster.</p>
+
+</div>
+</li>
+ <li class="thumb-block">
+<a class="thumb" href="/playground/honeycomb-stencils">
+<img alt="Honeycomb sketchsheets" src="/playground/uploads/project/thumb/36/honeycomb-sketchsheets.jpg" />
+</a> <div class="info">
+<h2><a href="/playground/honeycomb-stencils">ZURB Android Honeycomb Omnigraffle Stencils &amp; Sketchsheet</a></h2>
+<p>Use our Android Honeycomb stencils and sketchsheets to prototype faster.</p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/zurb-sketchsheets">
+<img alt="Zurb sketchsheets" src="/playground/uploads/project/thumb/31/zurb-sketchsheets.jpg" />
+</a> <div class="info">
+<h2><a href="/playground/zurb-sketchsheets">ZURB Sketchsheets</a></h2>
+<p>We&#39;ve developed a set of editable PDF sketchsheets we print out to improve our presentation of rough ideas to clients.</p>
+
+</div>
+</li>
+<li class="thumb-block">
+<a class="thumb" href="/playground/zurb-grid-paper">
+<img alt="Zurb grid paper" src="/playground/uploads/project/thumb/1/zurb-grid-paper.jpg" />
+</a> <div class="info">
+<h2><a href="/playground/zurb-grid-paper">ZURB Grid Paper</a></h2>
+<p>What&#39;s paper if it doesn&#39;t have dots? Connect the dots to give your sketches a little more structure while exploring refined concepts on paper.</p>
+
+</div>
+</li>
+</ul>
+</div>
+</div>
+<section id="studiosCallout" class="studios">
+<div class="row expanded">
+<div class="large-4 medium-4 columns">
+<img alt="Startup playground" src="/playground/assets/startup-playground-e4d9bb8be8d5e8ea0878fb420213e38d.svg" />
+</div>
+<div class="large-8 medium-8 columns banner-info">
+<div class="property-label">ZURB STUDIOS</div>
+<h3 class="light">Get started with finishing</h3>
+<p class="lead">Team up with our designers to see how our iterative design process can get your project going. Equipped with our Progressive Design process, visual skills, and the coding chops that brought you Foundation, ZURB Studios is ready to jump in and get your product out to the masses!</p>
+<div class="course-buttons">
+<a href="https://zurb.com/studios/getstarted" class="button" data-zcom-event="studios_playground_click" id="playgroundStartupV1">Show Me How &rarr;</a>
+</div>
+</div>
+</div>
+</section>
+<div class="zurb-footer-top bg-dgreen">
+<div class="row property">
+<div class="large-4 medium-4 columns">
+<div class="property-info">
+<h2><a class="home" href="https://zurb.com" title="ZURB">ZURB</a></h2>
+<p><a href="https://zurb.com/about" target="_blank">ZURB</a> is a product design company since 1998. Through consulting, product design tools and training, we transform the way businesses approach product design.</p>
+</div>
+</div>
+<div class="large-8 medium-8 columns">
+<div class="row collapse">
+<div class="large-4 medium-4 columns">
+<div class="learn-links">
+<h4>Want more?</h4>
+<ul>
+<li><a href="https://zurb.com/about/">About</a></li>
+<li><a href="https://zurb.com/services/our-work">Our Work</a></li>
+<li><a href="https://zurb.com/manifesto">Manifesto</a></li>
+<li><a href="https://zurb.com/blog">Blog</a></li>
+</ul>
+</div>
+</div>
+<div class="large-4 medium-4 columns">
+<div class="support-links">
+<h4>Talk to us</h4>
+<p>Call us at <strong>(408) 341-0600</strong></p>
+<p>Not a big talker? Email us at <a href="https://zurb.com/contact">getstarted@zurb.com</a></p>
+</div>
+</div>
+<div class="large-4 medium-4 columns">
+<div class="connect-links">
+<h4>Stay in touch</h4>
+<p>Get monthly updates from ZURB in your inbox. Read our <a href="https://zurb.com/news">latest news &amp; buzz.</a></p>
+<a href="https://zurb.com/news/signup" class="small button">Get ZURBnews!</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="zurb-footer-bottom">
+<div class="row">
+<div class="large-4 push-8 columns">
+<ul class="home-social">
+<li><a href="https://www.twitter.com/ZURB" class="twitter"></a></li>
+<li><a href="https://www.facebook.com/ZURB" class="facebook"></a></li>
+<li><a href="/contact" class="mail"></a></li>
+</ul>
+</div>
+<div class="large-8 pull-4 columns">
+<a href="https://zurb.com" class="zurb-logo regular"></a>
+<ul class="zurb-links">
+<li><a href="https://zurb.com/about">About</a></li>
+<li><a href="https://zurb.com/blog">Blog</a></li>
+<li><a href="https://zurb.com/news">News<span class="show-for-medium-up"> &amp; Events</span></a></li>
+<li><a href="https://zurb.com/contact">Contact</a></li>
+<li><a href="https://zurb.com/sitemap">Sitemap</a></li>
+</ul>
+<p class="copyright">© 1998–2018 ZURB, Inc. All rights reserved.</p>
+</div>
+</div>
+</div>
+
+<div id="loginModal" class="reveal-modal medium" data-reveal>
+<div class="row">
+<div class="large-12 columns">
+<h3>Log in with your ZURB ID</h3>
+</div>
+</div>
+<div class="row">
+<div class="large-7 columns">
+<a href="http://platform.zurb.com/auth/google_oauth2?origin=http%3A%2F%2Fzurb.com%2Fplayground%2Fauth%2Fzurb%2Fcallback%3Forigin%3Dhttp%3A%2F%2Fzurb.com%2Fplayground&amp;application_id=10" class="button expand google-btn">Log in with Google</a>
+<div class="login-separator">
+<span>or</span>
+<hr>
+</div>
+<form accept-charset="UTF-8" action="/playground/auth/zurb/email" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="hIHpiAcsIjKoar5/G1ERYOpVKnTxgEtYa4RDMRQMGGM=" /></div>
+<input id="email" name="email" placeholder="Email" type="text" />
+<input id="password" name="password" placeholder="Password" type="password" />
+<button type="submit" class="expand email-btn">Log in with Email</button>
+</form> <div class="subform-text">
+<p>Don't have a ZURB ID? <a href="#" data-reveal-id="signupModal">Sign up</a></p>
+<a href="http://platform.zurb.com/reset_password/new?application_id=10" class="forgot">Forgot password?</a>
+</div>
+</div>
+<div class="large-5 columns hide-for-small">
+<div class="account-explained">
+<h4>Your ZURB ID explained</h4>
+<p>You’ll use your ZURB ID to log in to all of ZURB’s properties — University, Products and Foundation. One account to handle it all.</p>
+<div class="parts university">
+<h5>University</h5>
+<p>Product design resources, courses and training.</p>
+</div>
+<div class="parts apps">
+<h5>Design Apps</h5>
+<p>Prototype, iterate and collect feedback on your products.</p>
+</div>
+<div class="parts foundation">
+<h5>Foundation</h5>
+<p>The most advanced front-end framework in the world.</p>
+</div>
+</div>
+</div>
+</div>
+<a class="close-reveal-modal">&#215;</a>
+</div>
+<div id="signupModal" class="reveal-modal medium" data-reveal>
+<div class="row">
+<div class="large-12 columns">
+<h3>Sign up for a ZURB ID</h3>
+</div>
+</div>
+<div class="row">
+<div class="large-7 columns">
+<a href="http://platform.zurb.com/auth/google_oauth2?origin=http%3A%2F%2Fzurb.com%2Fplayground%2Fauth%2Fzurb%2Fcallback%3Forigin%3Dhttp%3A%2F%2Fzurb.com%2Fplayground&amp;application_id=10" class="button expand google-btn">Sign up with Google</a>
+<div class="login-separator">
+<span>or</span>
+<hr>
+</div>
+<form accept-charset="UTF-8" action="/playground/auth/register" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="hIHpiAcsIjKoar5/G1ERYOpVKnTxgEtYa4RDMRQMGGM=" /></div>
+<input id="name" name="name" placeholder="Name" type="text" />
+<input id="email" name="email" placeholder="Email" type="text" />
+<input id="password" name="password" placeholder="Password" type="password" />
+<button type="submit" class="expand email-btn">Sign up with Email</button>
+</form> <div class="subform-text">
+<p>Already have a ZURB ID? <a href="#" data-reveal-id="loginModal">Log in</a></p>
+</div>
+</div>
+<div class="large-5 columns hide-for-small">
+<div class="account-explained">
+<h4>Your ZURB ID explained</h4>
+<p>You’ll use your ZURB ID to log in to all of ZURB’s properties — University, Products and Foundation. One account to handle it all.</p>
+<div class="parts university">
+<h5>University</h5>
+<p>Product design resources, courses and training.</p>
+</div>
+<div class="parts apps">
+<h5>Design Apps</h5>
+<p>Prototype, iterate and collect feedback on your products.</p>
+</div>
+<div class="parts foundation">
+<h5>Foundation</h5>
+<p>The most advanced front-end framework in the world.</p>
+</div>
+</div>
+</div>
+</div>
+<a class="close-reveal-modal">&#215;</a>
+</div>
+</section>
+
+<section id="sidebar" role="complementary">
+<div class="main-menu show-for-small">
+<h6>ZURB.com</h6>
+<nav id="sideMenu" role="navigation">
+<ul id="sideMainNav" class="nav-bar">
+<li><a href="https://zurb.com/about">About</a></li>
+<li><a href="https://zurb.com/services">Services</a></li>
+<li><a href="https://zurb.com/blog">Blog</a></li>
+<li><a href="https://zurb.com/playground">Sparks</a></li>
+<li><a href="https://zurb.com/soapbox">News &amp; Events</a></li>
+</ul>
+</nav>
+</div>
+<hr class="show-for-small">
+<div class="more-goodness  show-for-small">
+<h6>More ZURB Goodness</h6>
+<nav role="navigation">
+<ul id="sideMainNav" class="nav-bar goodness">
+<li><a href="https://zurb.com/manifesto">Manifesto</a></li>
+<li><a href="https://zurb.com/services/our-work">Our Work</a></li>
+<li><a href="https://zurb.com/university/courses">Product Design Courses</a></li>
+</ul>
+</nav>
+</div>
+<hr class=" show-for-small">
+<br>
+<div class="zurb-links">
+<ul class="top">
+<li class="logo"><a href="https://zurb.com"><img alt="Zurb logo t" src="/playground/assets/zurb-logo-t-bf307dfc96991d6a48d16b08c5b7a79d.png" /></a></li>
+<li><a href="https://zurb.com/about">About</a></li>
+<li><a href="https://zurb.com/blog">Blog</a></li>
+<li><a href="https://zurb.com/contact">Contact</a></li>
+</ul>
+</div>
+</section>
+
+<script src="/playground/assets/application-0b81e31a7e768122f0e094af2ce465c5.js"></script>
+<script src="/playground/assets/jquery.offcanvas-dfdfa16f5ba0b8021b5c06352ff48d5b.js"></script>
+</body>
+</html>
