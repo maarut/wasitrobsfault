@@ -1,4 +1,4 @@
-<html lang="en-gb">
+<html>
 <head>
 <style>
 body {
@@ -69,7 +69,7 @@ button {
             });
         }
         document.getElementById('response').innerHTML = response
-        document.getElementById('footer').innerHTML = new Date()
+        document.getElementById('footer').innerHTML = (new Date()).toLocaleString("en-GB")
 
     })
 </script>
